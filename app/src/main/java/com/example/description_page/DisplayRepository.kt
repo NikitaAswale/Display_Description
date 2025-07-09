@@ -4,7 +4,7 @@ import kotlinx.coroutines.flow.Flow
 
 class DescriptionRepository(private val descriptionDao: DescriptionDao) {
 
-    suspend fun getAllDescription() : Flow<List<Description>> {
+    fun getAllDescription() : Flow<List<Description>> {
         return descriptionDao.getAllDescription()
     }
 
